@@ -1,0 +1,44 @@
+div.tophead{
+    width: 100%;
+    background-color: antiquewhite;
+    color: black;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tophead span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+div.tophead a{
+    text-decoration: none;
+    color: black;
+    margin: 0px 5px;
+    padding: 0px 10px;
+}
+
+/* Media Query Start */
+@media screen and (max-width:769px){
+    .tophead span{
+        font-size: 15px;
+    }
+    .tophead a{
+        font-size: 10px;
+        margin: 0px 5px;
+    }
+  }
+
+@media screen and (max-width:426px){
+    div.tophead{
+    height: 100px;
+    padding: 0px 2px;
+    display: inline-block;
+    text-align: center;
+    }
+    
+}
+  /* Media Query End */

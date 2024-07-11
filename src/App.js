@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// import something from "somewhere";
+import React from 'react';
+import Tophead from './component/Tophead/Tophead';
+import Header from './component/Header/Header';
+import Navbar from './component/Navbar/Navbar';
+import Leftsidebar from './component/sidebar/Leftsidebar';
+import Footer from './component/Footer/Footer';
 
+// Function Defination Area
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <Tophead/>
+            <Header/>
+            <Navbar/>
+            <Leftsidebar/>
+            <Footer/>
+        </>
+    );
 }
 
+// Exporting Area
 export default App;
